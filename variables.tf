@@ -5,3 +5,7 @@ variable "ibmcloud_api_key" {
 variable "resource_group_name" {
   description = "Where to create resources"
 }
+
+variable "vpc_name" {
+  name = "fredl-simple-terraform"
+}
