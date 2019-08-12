@@ -7,5 +7,5 @@ variable "resource_group_name" {
 }
 
 variable "vpc_name" {
-  name = "fredl-simple-terraform"
+  default = "fredl-simple-terraform"
 }
