@@ -7,5 +7,5 @@ variable "resource_group_name" {
 }
 
 variable "vpc_name" {
-  default = "fredl-simple-terraform"
+  default = "harini-simple-terraform"
 }
