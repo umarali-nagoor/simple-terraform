@@ -7,5 +7,5 @@ variable "resource_group_name" {
 }
 
 variable "vpc_name" {
-  default = "harini-simple-terraform"
+  default = "harini-update-simple-terraform"
 }
