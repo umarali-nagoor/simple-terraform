@@ -4,8 +4,9 @@
 
 variable "resource_group_name" {
   description = "Where to create resources"
+  default = "Default"
 }
 
 variable "vpc_name" {
-  default = "harini-9-update-simple-terraform"
+  default = "harini-test-vpc"
 }
