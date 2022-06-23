@@ -7,6 +7,6 @@ variable "resource_group_name" {
   default = "Default"
 }
 
-/*variable "vpc_name" {
+variable "vpc_name" {
   default = "harini-test-vpc"
-}*/
+}
