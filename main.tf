@@ -5,7 +5,7 @@ data "ibm_resource_group" "group" {
 resource "ibm_is_vpc" "vpc" {
   name           = "${var.vpc_name}"
   resource_group = "${data.ibm_resource_group.group.id}"
-  default_security_group_name = "unseated-spoilage-surpass-prompt"
+  //default_security_group_name = "unseated-spoilage-surpass-prompt"
   tags = ["tag1","tag2"]
 }
 
