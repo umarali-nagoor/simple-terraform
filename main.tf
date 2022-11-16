@@ -13,6 +13,17 @@ resource "ibm_resource_group" "grp" {
   name           = "mygrp"
 }
 
+locals {
+email_stss = ["tanya.shanker@ibm.com"]
+}
+
+# STSS
+resource "ibm_iam_user_invite" "stss" {
+  users         = local.email_stss
+  access_groups = ["AccessGroupId-00a03ccc-7246-421b-af99-9ac9430e1304"]
+  lifecycle {ignore_changes = [invited_users]}
+}
+
 /*resource "null_resource" "test" {
    provisioner "local-exec" {
     command = "echo hello"
