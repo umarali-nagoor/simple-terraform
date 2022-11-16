@@ -20,8 +20,13 @@ email_stss = ["tanya.shanker@ibm.com"]
 # STSS
 resource "ibm_iam_user_invite" "stss" {
   users         = local.email_stss
-  access_groups = ["AccessGroupId-00a03ccc-7246-421b-af99-9ac9430e1304"]
+  access_groups = [ibm_iam_access_group.stss.id]
   lifecycle {ignore_changes = [invited_users]}
+}
+
+resource "ibm_iam_access_group" "stss" {
+  name                               = "RN-STSS"
+  description                        = "STSS"
 }
 
 /*resource "null_resource" "test" {
