@@ -9,6 +9,10 @@ resource "ibm_is_vpc" "vpc" {
   tags = ["tag1","tag2"]
 }
 
+resource "ibm_resource_group" "grp" {
+  name           = "mygrp"
+}
+
 /*resource "null_resource" "test" {
    provisioner "local-exec" {
     command = "echo hello"
