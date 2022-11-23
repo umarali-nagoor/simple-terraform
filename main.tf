@@ -9,7 +9,7 @@ resource "ibm_is_vpc" "vpc" {
   tags = ["tag1","tag2"]
 }
 
-resource "ibm_resource_group" "grp" {
+/*resource "ibm_resource_group" "grp" {
   name           = "mygrp1"
 }
 
@@ -31,7 +31,7 @@ resource "ibm_iam_access_group" "stss" {
 
 data "ibm_iam_access_group" "accgroup" {
   access_group_name = "RN-STSS"
-}
+}*/
 
 /*resource "null_resource" "test" {
    provisioner "local-exec" {
