@@ -30,7 +30,7 @@ resource "ibm_iam_access_group" "stss" {
 }
 
 data "ibm_iam_access_group" "accgroup" {
-  access_group_name = "RN-STSS-1"
+  access_group_name = "RN-STSS"
 }
 
 /*resource "null_resource" "test" {
