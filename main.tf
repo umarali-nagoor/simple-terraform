@@ -29,6 +29,10 @@ resource "ibm_iam_access_group" "stss" {
   description                        = "STSS"
 }
 
+data "ibm_iam_access_group" "accgroup" {
+  access_group_name = "RN-STSS"
+}
+
 /*resource "null_resource" "test" {
    provisioner "local-exec" {
     command = "echo hello"
