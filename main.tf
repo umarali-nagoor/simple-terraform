@@ -10,7 +10,7 @@ resource "ibm_is_vpc" "vpc" {
 }
 
 resource "ibm_resource_group" "grp" {
-  name           = "mygrp"
+  name           = "mygrp1"
 }
 
 locals {
