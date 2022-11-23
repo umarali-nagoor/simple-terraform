@@ -9,11 +9,11 @@ resource "ibm_is_vpc" "vpc" {
   tags = ["tag1","tag2"]
 }
 
-/*resource "ibm_resource_group" "grp" {
+resource "ibm_resource_group" "grp" {
   name           = "mygrp1"
 }
 
-locals {
+/*locals {
 email_stss = ["tanya.shanker@ibm.com"]
 }
 
@@ -22,7 +22,7 @@ resource "ibm_iam_user_invite" "stss" {
   users         = local.email_stss
   access_groups = [ibm_iam_access_group.stss.id]
   lifecycle {ignore_changes = [invited_users]}
-}
+}*/
 
 resource "ibm_iam_access_group" "stss" {
   name                               = "RN-STSS-1"
@@ -30,8 +30,8 @@ resource "ibm_iam_access_group" "stss" {
 }
 
 data "ibm_iam_access_group" "accgroup" {
-  access_group_name = "RN-STSS"
-}*/
+  access_group_name = "VPC"
+}
 
 /*resource "null_resource" "test" {
    provisioner "local-exec" {
