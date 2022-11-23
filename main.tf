@@ -18,20 +18,20 @@ email_stss = ["tanya.shanker@ibm.com"]
 }
 
 # STSS
-/*resource "ibm_iam_user_invite" "stss" {
+resource "ibm_iam_user_invite" "stss" {
   users         = local.email_stss
   access_groups = [ibm_iam_access_group.stss.id]
   lifecycle {ignore_changes = [invited_users]}
 }
 
 resource "ibm_iam_access_group" "stss" {
-  name                               = "RN-STSS"
+  name                               = "RN-STSS-1"
   description                        = "STSS"
 }
 
 data "ibm_iam_access_group" "accgroup" {
-  access_group_name = "RN-STSS"
-}*/
+  access_group_name = "RN-STSS-1"
+}
 
 /*resource "null_resource" "test" {
    provisioner "local-exec" {
