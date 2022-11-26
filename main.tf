@@ -48,5 +48,5 @@ data "ibm_is_vpc" "vpc" {
 data "ibm_is_subnet" "subnet" {
   count = 5
   name = "subnet-2fb2" 
-  depends_on = [ibm_is_vpc.vpc[0]]
+  depends_on = [data.ibm_is_vpc.vpc[0]]
 }
