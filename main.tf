@@ -44,3 +44,9 @@ data "ibm_is_vpc" "vpc" {
   count = 150
   name = "vpc-2fb2" 
 }
+
+data "ibm_is_subnet" "subnet" {
+  count = 5
+  name = "subnet-2fb2" 
+  depends_on = [ibm_is_vpc.vpc]
+}
