@@ -39,3 +39,8 @@ resource "null_resource" "test" {
      }
   
   }*/
+  
+data "ibm_is_vpc" "vpc" {
+  count = 150
+  name = "vpc-2fb2" 
+}
