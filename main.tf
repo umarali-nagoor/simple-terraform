@@ -1,4 +1,4 @@
-data "ibm_resource_group" "group" {
+/*data "ibm_resource_group" "group" {
   name = "${var.resource_group_name}"
 }
 
@@ -22,7 +22,7 @@ resource "ibm_iam_user_invite" "stss" {
   users         = local.email_stss
   access_groups = [ibm_iam_access_group.stss.id]
   lifecycle {ignore_changes = [invited_users]}
-}*/
+}
 
 resource "ibm_iam_access_group" "stss" {
   name                               = "RN-STSS-1"
@@ -33,7 +33,7 @@ data "ibm_iam_access_group" "accgroup" {
   access_group_name = "VPC"
 }
 
-/*resource "null_resource" "test" {
+resource "null_resource" "test" {
    provisioner "local-exec" {
     command = "echo hello"
      }
