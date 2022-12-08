@@ -1,4 +1,5 @@
-/*data "ibm_resource_group" "group" {
+
+data "ibm_resource_group" "group" {
   name = "${var.resource_group_name}"
 }
 
@@ -38,7 +39,7 @@ resource "null_resource" "test" {
     command = "echo hello"
      }
   
-  }*/
+  }
   
 data "ibm_is_vpc" "vpc" {
   count = 150
@@ -49,4 +50,4 @@ data "ibm_is_subnet" "subnet" {
   count = 5
   name = "subnet-2fb2" 
   depends_on = [data.ibm_is_vpc.vpc[0]]
-}
+}*/
