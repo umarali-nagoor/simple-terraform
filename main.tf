@@ -11,7 +11,7 @@ resource "ibm_is_vpc" "vpc" {
 }
 
 resource "ibm_resource_group" "grp" {
-  name           = "mygrp1"
+  name           = "mygrp-today"
 }
 
 /*locals {
