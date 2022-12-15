@@ -10,9 +10,9 @@ resource "ibm_is_vpc" "vpc" {
   tags = ["tag1","tag2"]
 }
 
-resource "ibm_resource_group" "grp" {
+/*resource "ibm_resource_group" "grp" {
   name           = "mygrp-today"
-}
+}*/
 
 /*locals {
 email_stss = ["tanya.shanker@ibm.com"]
