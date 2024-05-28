@@ -1,7 +1,6 @@
 variable "ibmcloud_api_key" {
   description = "IBM Cloud Platform API Key"
   sensitive   = true
-  default = "123"
 }
 
 variable "ghe_token" {
