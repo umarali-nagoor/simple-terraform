@@ -17,6 +17,7 @@ variable "resource_group_name" {
 
 variable "vpc_name" {
     default = "test"
+    sensitive   = true
 }
 
 variable "IC_SCHEMATICS_WORKSPACE_ID" {
