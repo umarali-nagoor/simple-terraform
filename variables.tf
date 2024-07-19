@@ -4,13 +4,6 @@ variable "ibmcloud_api_key" {
   type = string
 }
 
-variable "ghe_token" {
-  description = "IBM Cloud Platform ghe token"
-  sensitive   = true
-  default = "abc"
-}
-
-
 variable "resource_group_name" {
   description = "Where to create resources"
   default = "Default"
