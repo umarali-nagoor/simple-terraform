@@ -2,6 +2,7 @@ variable "ibmcloud_api_key" {
   description = "IBM Cloud Platform API Key"
   sensitive   = true
   type = string
+  default = "abc"
 }
 
 variable "resource_group_name" {
