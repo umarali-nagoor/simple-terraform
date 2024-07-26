@@ -19,3 +19,10 @@ variable "IC_SCHEMATICS_WORKSPACE_ID" {
   default     = "test"
 }
 
+variable "name" {
+  description = "The name to pass to the template."
+  default = "This Is Sensitive Value"
+  sensitive = true
+}
+
+
