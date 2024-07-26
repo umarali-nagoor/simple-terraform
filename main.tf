@@ -7,3 +7,8 @@ resource "ibm_is_vpc" "vpc" {
   resource_group = "${data.ibm_resource_group.group.id}"
   tags = ["tag1","tag2"]
 }
+
+data "template_file" "test" {
+  template = "Hello ${var.name}"
+}
+
